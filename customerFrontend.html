@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script type="text/javascript"
+        src="formChecker.js">
+        </script>
+        <link href="style.css"
+          rel="stylesheet"
+          type="text/css"/>
+    <title>Jakob Wulf-Eck</title>
+  </head>
+
+  <body class = "frontendbody" id = "body">
+    <input type="text" form="custForm" name="userName" id="userName" placeholder="User Email"><br>
+    <input type="text" form="custForm" name="pw" id="pw" placeholder="Password"><br><br>
+    <input type="text" form="custForm" name="blueOrders" id="blueOrders" placeholder="Blue Shirts ($10)"><br>
+    <input type="text" form="custForm" name="redOrders" id="redOrders" placeholder="Red Shirts ($20)"><br>
+    <input type="text" form="custForm" name="greenOrders" id="greenOrders" placeholder="Green Shirts ($50)"><br>
+
+    <form class = " radioForm" id = "custForm" onsubmit="return validate()" action="customerBackend.php" method="post">
+      <br>Shipping:<br>
+      <input type="radio" name="shipping"  id="sevenday" value="Seven Day">7 Day (Free)<br>
+      <input type="radio" name="shipping" id="overnight" value="Overnight">Overnight ($50)<br>
+      <input type="radio" name="shipping" id="threeday" value="Three Day">Three Day ($5)<br>
+      <br>
+      <input type="reset">
+      <input type="submit">
+    </form>
+  </body>
+</html>

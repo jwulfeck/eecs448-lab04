@@ -1,0 +1,17 @@
+<style>
+table, th, td {
+   border: 1px solid black;
+}
+th{
+  background-color: red;
+}
+td{
+  background-color: #ADD8E6;
+}
+.frontendbody{
+  background-color: #ADD8E6;
+}
+.radioForm{
+  color:gray;
+}
+</style>
